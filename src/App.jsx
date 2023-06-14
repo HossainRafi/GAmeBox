@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 
 function App() {
   // const [count, setCount]=useState(0)
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   return (
     <div className={`${theme} ${theme == "dark" ? "bg-[#121212]" : null}`}>
