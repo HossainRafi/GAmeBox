@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import logo from "./../assets/logo1.png";
 import { HiMoon, HiOutlineMagnifyingGlass, HiSun } from "react-icons/hi2";
 import { ThemeContext } from "../context/ThemeContext";
@@ -6,10 +6,7 @@ import { ThemeContext } from "../context/ThemeContext";
 //!================ Function Starts From Here =================
 function Header() {
   const [toggle, setToggle] = useState(false);
-  const {theme, setTheme}=useContext(ThemeContext)
-  useEffect(() => {
-    console.log("THEME--", theme);
-  }, []);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <div className="flex items-center p-3">
@@ -25,15 +22,16 @@ function Header() {
 
       {/* ================= Theme Toggle Buttons ================ */}
       <div>
-        {toggle ? (
-          <HiMoon
-            className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full"
-            onClick={() => setToggle(!toggle)}
+        {theme == "dark" ? (
+          <HiSun
+            className="text-[35px] cursor-pointer
+       bg-gray-200 text-black p-1 rounded-full "
+            onClick={() => setTheme("light")}
           />
         ) : (
-          <HiSun
-            className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full "
-            onClick={() => setToggle(!toggle)}
+          <HiMoon
+            className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full"
+            onClick={() => setTheme("dark")}
           />
         )}
       </div>
