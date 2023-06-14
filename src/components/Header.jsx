@@ -17,6 +17,8 @@ function Header() {
           className="bg-transparent w-full outline-none pl-2 items-center rounded-full"
         />
       </div>
+
+      {/* ================= Theme Toggle Buttons ================ */}
       <div>
         {toggle ? (
           <HiMoon
