@@ -19,11 +19,14 @@ function Header() {
       </div>
       <div>
         {toggle ? (
-          <HiMoon className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full" />
+          <HiMoon
+            className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full"
+            onClick={() => setToggle(!toggle)}
+          />
         ) : (
           <HiSun
-            className="text-[35px] cursor-pointer
-       bg-gray-200 text-black p-1 rounded-full "
+            className="text-[35px] cursor-pointer bg-gray-200 text-black p-1 rounded-full "
+            onClick={() => setToggle(!toggle)}
           />
         )}
       </div>
