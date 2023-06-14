@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import logo from "./../assets/logo1.png";
 import { HiMoon, HiOutlineMagnifyingGlass, HiSun } from "react-icons/hi2";
+import { ThemeContext } from "../context/ThemeContext";
 
 //!================ Function Starts From Here =================
 function Header() {
   const [toggle, setToggle] = useState(false);
+  const {theme, setTheme}=useContext(ThemeContext)
+  useEffect(() => {
+    console.log("THEME--", theme);
+  }, []);
 
   return (
     <div className="flex items-center p-3">
