@@ -49,7 +49,6 @@ function Header() {
           className="bg-transparent w-full outline-none pl-2 items-center rounded-full"
         />
       </div>
-      {/* <label className="ml-2">Dark</label> */}
       <div>
         {theme == "dark" ? (
           <HiSun
