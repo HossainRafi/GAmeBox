@@ -11,7 +11,6 @@ function Home() {
 
   useEffect(() => {
     GlobalApi.getPopularGame.then((resp) => {
-      console.log(resp);
       setGameList(resp.data.results);
     });
     getGameList(4);
