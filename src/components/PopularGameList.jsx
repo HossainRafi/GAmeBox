@@ -4,7 +4,6 @@ import GlobalApi from "../Servies.js/GlobalApi";
 function PopularGameList({ gameList }) {
   const getMovieDetails = (id) => {
     GlobalApi.getMovieDetails(id).then((resp) => {
-      console.log(resp);
     });
   };
   return (
