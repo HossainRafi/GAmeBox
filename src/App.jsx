@@ -2,8 +2,6 @@ import { createContext, useEffect, useState } from "react";
 
 import Home from "./Pages/Home";
 import { ThemeContext } from "./Context/ThemeContext";
-// import ThemeContext from './Context/ThemeContext'
-//eimport Header from './components/Header';
 export const ThemeContext = createContext('dark');
 
 function App() {
