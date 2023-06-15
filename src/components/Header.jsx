@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import logo from "./../assets/Images/logo.png";
-import logo1 from "./../assets/Images/logo1.png";
+import { useContext, useEffect, useState } from "react";
+import logo from "./../assets/Images/logo1.png";
 
 import SideNavGenreList from "./SideNavGenreList";
 import {
