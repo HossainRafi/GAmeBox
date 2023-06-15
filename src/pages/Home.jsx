@@ -18,7 +18,6 @@ function Home() {
   const getGameList = (genreId) => {
     if (genreId != 0) {
       GlobalApi.getGameListByGenreId(genreId).then((resp) => {
-        console.log(resp);
         setGameListByGenre(resp.data.results);
       });
     }
