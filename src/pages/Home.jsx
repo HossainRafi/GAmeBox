@@ -1,11 +1,11 @@
-// import React from 'react'
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="grid grid-cols-4 p-8">
+      <div>Genre</div>
+      <div>Game List</div>
     </div>
-  )
+  );
 }
 
 export default Home
