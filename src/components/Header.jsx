@@ -50,10 +50,6 @@ function Header() {
         />
       </div>
 
-      {/* <Switch id="theme"  /> */}
-      {/* <Switch colorScheme='green' isChecked={colorMode === 'dark'} 
-      onChange={toggleColorMode} /> */}
-
       {/* <HiOutlineBars3CenterLeft className="text-[30px]" />
       {toggle?
       <div>
