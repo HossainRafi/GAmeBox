@@ -16,7 +16,6 @@ function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    console.log("THEME--", theme);
   }, []);
 
   return (
