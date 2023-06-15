@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 function Slider({ game }) {
   useEffect(() => {
-    console.log(game);
   }, []);
   return (
     <div className="relative ">
