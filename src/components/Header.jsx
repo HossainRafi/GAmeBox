@@ -49,14 +49,6 @@ function Header() {
           className="bg-transparent w-full outline-none pl-2 items-center rounded-full"
         />
       </div>
-
-      {/* <HiOutlineBars3CenterLeft className="text-[30px]" />
-      {toggle?
-      <div>
-         <SideNavGenreList/>
-        </div>
-       
-      :null} */}
       {/* <label className="ml-2">Dark</label> */}
       <div>
         {theme == "dark" ? (
