@@ -15,7 +15,6 @@ import { ThemeContext } from "../Context/ThemeContext";
 function Header() {
   const [toggle, setToggle] = useState(false);
   const { theme, setTheme } = useContext(ThemeContext);
-  // const {toggleColorMode, colorMode} = useColorMode();
 
   useEffect(() => {
     console.log("THEME--", theme);
